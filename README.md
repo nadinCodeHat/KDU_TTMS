@@ -33,10 +33,10 @@ MySQL database for KDU_TTMS is not included.
 
 ## Samples
 
-![alt text](raw.githubusercontent.com/nadinCodeHat/KDU_TTMS/main/.github/images/login.png)
-![alt text](raw.githubusercontent.com/nadinCodeHat/KDU_TTMS/main/.github/images/dashboard.png)
-![alt text](raw.githubusercontent.com/nadinCodeHat/KDU_TTMS/main/.github/images/student_timetable.png)
-![alt text](raw.githubusercontent.com/nadinCodeHat/KDU_TTMS/main/.github/images/timetable_this_week.png)
-![alt text](raw.githubusercontent.com/nadinCodeHat/KDU_TTMS/main/.github/images/add_timetable.png)
-![alt text](raw.githubusercontent.com/nadinCodeHat/KDU_TTMS/main/.github/images/view_timetables.png)
-![alt text](raw.githubusercontent.com/nadinCodeHat/KDU_TTMS/main/.github/images/manage_lectures.png)
+![alt text](/.github/images/login.png)
+![alt text](/.github/images/dashboard.png)
+![alt text](/.github/images/student_timetable.png)
+![alt text](/.github/images/timetable_this_week.png)
+![alt text](/.github/images/add_timetable.png)
+![alt text](/.github/images/view_timetables.png)
+![alt text](/.github/images/manage_lectures.png)
