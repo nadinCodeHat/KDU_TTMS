@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet_getModule_Info" targetNamespace="http://tempuri.org/DataSet_getModule_Info.xsd" xmlns:mstns="http://tempuri.org/DataSet_getModule_Info.xsd" xmlns="http://tempuri.org/DataSet_getModule_Info.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ttms_dbConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="ttms_dbConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.KDU_TTMS.Properties.Settings.GlobalReference.Default.ttms_dbConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="module_infoTableAdapter" GeneratorDataComponentClassName="module_infoTableAdapter" Name="module_info" UserDataComponentName="module_infoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ttms_dbConnectionString (Settings)" DbObjectName="ttms_db.module_info" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `lecture_code`, `lecture_abbr`, `lecture_module`, `credit`, `gpatype`, `module_type`, `semester`, `degree_programme` FROM `module_info`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="lecture_code" DataSetColumn="lecture_code" />
+              <Mapping SourceColumn="lecture_abbr" DataSetColumn="lecture_abbr" />
+              <Mapping SourceColumn="lecture_module" DataSetColumn="lecture_module" />
+              <Mapping SourceColumn="credit" DataSetColumn="credit" />
+              <Mapping SourceColumn="gpatype" DataSetColumn="gpatype" />
+              <Mapping SourceColumn="module_type" DataSetColumn="module_type" />
+              <Mapping SourceColumn="semester" DataSetColumn="semester" />
+              <Mapping SourceColumn="degree_programme" DataSetColumn="degree_programme" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet_getModule_Info" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="DataSet_getModule_Info" msprop:Generator_DataSetName="DataSet_getModule_Info">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="module_info" msprop:Generator_RowClassName="module_infoRow" msprop:Generator_RowEvHandlerName="module_infoRowChangeEventHandler" msprop:Generator_RowDeletedName="module_infoRowDeleted" msprop:Generator_RowDeletingName="module_infoRowDeleting" msprop:Generator_RowEvArgName="module_infoRowChangeEvent" msprop:Generator_TablePropName="module_info" msprop:Generator_RowChangedName="module_infoRowChanged" msprop:Generator_RowChangingName="module_infoRowChanging" msprop:Generator_TableClassName="module_infoDataTable" msprop:Generator_UserTableName="module_info" msprop:Generator_TableVarName="tablemodule_info">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="lecture_code" msprop:Generator_ColumnPropNameInRow="lecture_code" msprop:Generator_ColumnPropNameInTable="lecture_codeColumn" msprop:Generator_ColumnVarNameInTable="columnlecture_code" msprop:Generator_UserColumnName="lecture_code">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="lecture_abbr" msprop:Generator_ColumnPropNameInRow="lecture_abbr" msprop:Generator_ColumnPropNameInTable="lecture_abbrColumn" msprop:Generator_ColumnVarNameInTable="columnlecture_abbr" msprop:Generator_UserColumnName="lecture_abbr">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="lecture_module" msprop:Generator_ColumnPropNameInRow="lecture_module" msprop:Generator_ColumnPropNameInTable="lecture_moduleColumn" msprop:Generator_ColumnVarNameInTable="columnlecture_module" msprop:Generator_UserColumnName="lecture_module">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="credit" msprop:Generator_ColumnPropNameInRow="credit" msprop:Generator_ColumnPropNameInTable="creditColumn" msprop:Generator_ColumnVarNameInTable="columncredit" msprop:Generator_UserColumnName="credit" type="xs:int" />
+              <xs:element name="gpatype" msprop:Generator_ColumnPropNameInRow="gpatype" msprop:Generator_ColumnPropNameInTable="gpatypeColumn" msprop:Generator_ColumnVarNameInTable="columngpatype" msprop:Generator_UserColumnName="gpatype">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="65535" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="module_type" msprop:Generator_ColumnPropNameInRow="module_type" msprop:Generator_ColumnPropNameInTable="module_typeColumn" msprop:Generator_ColumnVarNameInTable="columnmodule_type" msprop:Generator_UserColumnName="module_type">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="65535" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="semester" msprop:Generator_ColumnPropNameInRow="semester" msprop:Generator_ColumnPropNameInTable="semesterColumn" msprop:Generator_ColumnVarNameInTable="columnsemester" msprop:Generator_UserColumnName="semester" type="xs:int" />
+              <xs:element name="degree_programme" msprop:Generator_ColumnPropNameInRow="degree_programme" msprop:Generator_ColumnPropNameInTable="degree_programmeColumn" msprop:Generator_ColumnVarNameInTable="columndegree_programme" msprop:Generator_UserColumnName="degree_programme">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="65535" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

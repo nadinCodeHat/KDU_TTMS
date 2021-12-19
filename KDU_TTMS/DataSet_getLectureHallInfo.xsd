@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet_getLectureHallInfo" targetNamespace="http://tempuri.org/DataSet_getLectureHallInfo.xsd" xmlns:mstns="http://tempuri.org/DataSet_getLectureHallInfo.xsd" xmlns="http://tempuri.org/DataSet_getLectureHallInfo.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ttms_dbConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="ttms_dbConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.KDU_TTMS.Properties.Settings.GlobalReference.Default.ttms_dbConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="lecture_hall_infoTableAdapter" GeneratorDataComponentClassName="lecture_hall_infoTableAdapter" Name="lecture_hall_info" UserDataComponentName="lecture_hall_infoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ttms_dbConnectionString (Settings)" DbObjectName="ttms_db.lecture_hall_info" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `lecture_hall`, `capacity`, `availability` FROM `lecture_hall_info`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="lecture_hall" DataSetColumn="lecture_hall" />
+              <Mapping SourceColumn="capacity" DataSetColumn="capacity" />
+              <Mapping SourceColumn="availability" DataSetColumn="availability" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet_getLectureHallInfo" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="DataSet_getLectureHallInfo" msprop:Generator_DataSetName="DataSet_getLectureHallInfo">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="lecture_hall_info" msprop:Generator_RowClassName="lecture_hall_infoRow" msprop:Generator_RowEvHandlerName="lecture_hall_infoRowChangeEventHandler" msprop:Generator_RowDeletedName="lecture_hall_infoRowDeleted" msprop:Generator_RowDeletingName="lecture_hall_infoRowDeleting" msprop:Generator_RowEvArgName="lecture_hall_infoRowChangeEvent" msprop:Generator_TablePropName="lecture_hall_info" msprop:Generator_RowChangedName="lecture_hall_infoRowChanged" msprop:Generator_RowChangingName="lecture_hall_infoRowChanging" msprop:Generator_TableClassName="lecture_hall_infoDataTable" msprop:Generator_UserTableName="lecture_hall_info" msprop:Generator_TableVarName="tablelecture_hall_info">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="lecture_hall" msprop:Generator_ColumnPropNameInRow="lecture_hall" msprop:Generator_ColumnPropNameInTable="lecture_hallColumn" msprop:Generator_ColumnVarNameInTable="columnlecture_hall" msprop:Generator_UserColumnName="lecture_hall">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="capacity" msprop:Generator_ColumnPropNameInRow="capacity" msprop:Generator_ColumnPropNameInTable="capacityColumn" msprop:Generator_ColumnVarNameInTable="columncapacity" msprop:Generator_UserColumnName="capacity" type="xs:int" />
+              <xs:element name="availability" msprop:Generator_ColumnPropNameInRow="availability" msprop:Generator_ColumnPropNameInTable="availabilityColumn" msprop:Generator_ColumnVarNameInTable="columnavailability" msprop:Generator_UserColumnName="availability">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="65535" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

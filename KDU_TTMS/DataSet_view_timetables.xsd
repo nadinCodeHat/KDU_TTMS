@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet_view_timetables" targetNamespace="http://tempuri.org/DataSet_view_timetables.xsd" xmlns:mstns="http://tempuri.org/DataSet_view_timetables.xsd" xmlns="http://tempuri.org/DataSet_view_timetables.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ttms_dbConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="ttms_dbConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.KDU_TTMS.Properties.Settings.GlobalReference.Default.ttms_dbConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ttms_timetable_mainTableAdapter" GeneratorDataComponentClassName="ttms_timetable_mainTableAdapter" Name="ttms_timetable_main" UserDataComponentName="ttms_timetable_mainTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ttms_dbConnectionString (Settings)" DbObjectName="ttms_db.ttms_timetable_main" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `intake`, `semester`, `validity_period_start`, `validity_period_end`, `week` FROM `ttms_timetable_main`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="intake" DataSetColumn="intake" />
+              <Mapping SourceColumn="semester" DataSetColumn="semester" />
+              <Mapping SourceColumn="validity_period_start" DataSetColumn="validity_period_start" />
+              <Mapping SourceColumn="validity_period_end" DataSetColumn="validity_period_end" />
+              <Mapping SourceColumn="week" DataSetColumn="week" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet_view_timetables" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="DataSet_view_timetables" msprop:Generator_DataSetName="DataSet_view_timetables">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ttms_timetable_main" msprop:Generator_RowClassName="ttms_timetable_mainRow" msprop:Generator_RowEvHandlerName="ttms_timetable_mainRowChangeEventHandler" msprop:Generator_RowDeletedName="ttms_timetable_mainRowDeleted" msprop:Generator_RowDeletingName="ttms_timetable_mainRowDeleting" msprop:Generator_RowEvArgName="ttms_timetable_mainRowChangeEvent" msprop:Generator_TablePropName="ttms_timetable_main" msprop:Generator_RowChangedName="ttms_timetable_mainRowChanged" msprop:Generator_RowChangingName="ttms_timetable_mainRowChanging" msprop:Generator_TableClassName="ttms_timetable_mainDataTable" msprop:Generator_UserTableName="ttms_timetable_main" msprop:Generator_TableVarName="tablettms_timetable_main">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="intake" msprop:Generator_ColumnPropNameInRow="intake" msprop:Generator_ColumnPropNameInTable="intakeColumn" msprop:Generator_ColumnVarNameInTable="columnintake" msprop:Generator_UserColumnName="intake" type="xs:int" />
+              <xs:element name="semester" msprop:Generator_ColumnPropNameInRow="semester" msprop:Generator_ColumnPropNameInTable="semesterColumn" msprop:Generator_ColumnVarNameInTable="columnsemester" msprop:Generator_UserColumnName="semester">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="validity_period_start" msprop:Generator_ColumnPropNameInRow="validity_period_start" msprop:Generator_ColumnPropNameInTable="validity_period_startColumn" msprop:Generator_ColumnVarNameInTable="columnvalidity_period_start" msprop:Generator_UserColumnName="validity_period_start" type="xs:dateTime" />
+              <xs:element name="validity_period_end" msprop:Generator_ColumnPropNameInRow="validity_period_end" msprop:Generator_ColumnPropNameInTable="validity_period_endColumn" msprop:Generator_ColumnVarNameInTable="columnvalidity_period_end" msprop:Generator_UserColumnName="validity_period_end" type="xs:dateTime" />
+              <xs:element name="week" msprop:Generator_ColumnPropNameInRow="week" msprop:Generator_ColumnPropNameInTable="weekColumn" msprop:Generator_ColumnVarNameInTable="columnweek" msprop:Generator_UserColumnName="week" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

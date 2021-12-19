@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ae416504-d6cf-4b47-a398-d22287666a74": {
+      "ProjectGuid": "ae416504-d6cf-4b47-a398-d22287666a74",
+      "DisplayName": "Program",
+      "ColorIndex": 0
+    },
+    "0cb24cbe-6c40-431d-b917-c468deaad957": {
+      "ProjectGuid": "0cb24cbe-6c40-431d-b917-c468deaad957",
+      "DisplayName": "KDU_TTMS",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 2
+}

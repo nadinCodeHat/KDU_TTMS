@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet_getAssistant_Info" targetNamespace="http://tempuri.org/DataSet_getAssistant_Info.xsd" xmlns:mstns="http://tempuri.org/DataSet_getAssistant_Info.xsd" xmlns="http://tempuri.org/DataSet_getAssistant_Info.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ttms_dbConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="ttms_dbConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.KDU_TTMS.Properties.Settings.GlobalReference.Default.ttms_dbConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="assistant_infoTableAdapter" GeneratorDataComponentClassName="assistant_infoTableAdapter" Name="assistant_info" UserDataComponentName="assistant_infoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ttms_dbConnectionString (Settings)" DbObjectName="ttms_db.assistant_info" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `assistant_name`, `gender`, `priviledges`, `assistant_email`, `assistant_mobile`, `status` FROM `assistant_info`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="assistant_name" DataSetColumn="assistant_name" />
+              <Mapping SourceColumn="gender" DataSetColumn="gender" />
+              <Mapping SourceColumn="priviledges" DataSetColumn="priviledges" />
+              <Mapping SourceColumn="assistant_email" DataSetColumn="assistant_email" />
+              <Mapping SourceColumn="assistant_mobile" DataSetColumn="assistant_mobile" />
+              <Mapping SourceColumn="status" DataSetColumn="status" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet_getAssistant_Info" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="DataSet_getAssistant_Info" msprop:Generator_DataSetName="DataSet_getAssistant_Info">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="assistant_info" msprop:Generator_RowClassName="assistant_infoRow" msprop:Generator_RowEvHandlerName="assistant_infoRowChangeEventHandler" msprop:Generator_RowDeletedName="assistant_infoRowDeleted" msprop:Generator_RowDeletingName="assistant_infoRowDeleting" msprop:Generator_RowEvArgName="assistant_infoRowChangeEvent" msprop:Generator_TablePropName="assistant_info" msprop:Generator_RowChangedName="assistant_infoRowChanged" msprop:Generator_RowChangingName="assistant_infoRowChanging" msprop:Generator_TableClassName="assistant_infoDataTable" msprop:Generator_UserTableName="assistant_info" msprop:Generator_TableVarName="tableassistant_info">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="assistant_name" msprop:Generator_ColumnPropNameInRow="assistant_name" msprop:Generator_ColumnPropNameInTable="assistant_nameColumn" msprop:Generator_ColumnVarNameInTable="columnassistant_name" msprop:Generator_UserColumnName="assistant_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="65535" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="gender" msprop:Generator_ColumnPropNameInRow="gender" msprop:Generator_ColumnPropNameInTable="genderColumn" msprop:Generator_ColumnVarNameInTable="columngender" msprop:Generator_UserColumnName="gender" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="65535" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="priviledges" msprop:Generator_ColumnPropNameInRow="priviledges" msprop:Generator_ColumnPropNameInTable="priviledgesColumn" msprop:Generator_ColumnVarNameInTable="columnpriviledges" msprop:Generator_UserColumnName="priviledges">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="65535" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="assistant_email" msprop:Generator_ColumnPropNameInRow="assistant_email" msprop:Generator_ColumnPropNameInTable="assistant_emailColumn" msprop:Generator_ColumnVarNameInTable="columnassistant_email" msprop:Generator_UserColumnName="assistant_email">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="assistant_mobile" msprop:Generator_ColumnPropNameInRow="assistant_mobile" msprop:Generator_ColumnPropNameInTable="assistant_mobileColumn" msprop:Generator_ColumnVarNameInTable="columnassistant_mobile" msprop:Generator_UserColumnName="assistant_mobile" type="xs:int" />
+              <xs:element name="status" msprop:Generator_ColumnPropNameInRow="status" msprop:Generator_ColumnPropNameInTable="statusColumn" msprop:Generator_ColumnVarNameInTable="columnstatus" msprop:Generator_UserColumnName="status">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="65535" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
