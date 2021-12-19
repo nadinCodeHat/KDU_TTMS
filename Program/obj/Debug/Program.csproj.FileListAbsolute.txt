@@ -33,3 +33,21 @@ C:\Users\Nadin\Documents\KDU Time Table Management System\Program\obj\Debug\Prog
 C:\Users\Nadin\Documents\KDU Time Table Management System\Program\obj\Debug\Program.exe
 C:\Users\Nadin\Documents\KDU Time Table Management System\Program\obj\Debug\Program.pdb
 C:\Users\Nadin\Documents\KDU Time Table Management System\Program\obj\Debug\Program.csproj.AssemblyReference.cache
+C:\Users\Nadin\Documents\Projects\KDU_TTMS\Program\bin\Debug\Program.exe.config
+C:\Users\Nadin\Documents\Projects\KDU_TTMS\Program\bin\Debug\Program.exe
+C:\Users\Nadin\Documents\Projects\KDU_TTMS\Program\bin\Debug\Program.pdb
+C:\Users\Nadin\Documents\Projects\KDU_TTMS\Program\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\Nadin\Documents\Projects\KDU_TTMS\Program\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Nadin\Documents\Projects\KDU_TTMS\Program\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Nadin\Documents\Projects\KDU_TTMS\Program\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Nadin\Documents\Projects\KDU_TTMS\Program\bin\Debug\Twilio.dll
+C:\Users\Nadin\Documents\Projects\KDU_TTMS\Program\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\Nadin\Documents\Projects\KDU_TTMS\Program\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Nadin\Documents\Projects\KDU_TTMS\Program\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\Nadin\Documents\Projects\KDU_TTMS\Program\bin\Debug\Twilio.xml
+C:\Users\Nadin\Documents\Projects\KDU_TTMS\Program\obj\Debug\Program.csproj.AssemblyReference.cache
+C:\Users\Nadin\Documents\Projects\KDU_TTMS\Program\obj\Debug\Program.csproj.SuggestedBindingRedirects.cache
+C:\Users\Nadin\Documents\Projects\KDU_TTMS\Program\obj\Debug\Program.csproj.CoreCompileInputs.cache
+C:\Users\Nadin\Documents\Projects\KDU_TTMS\Program\obj\Debug\Program.csproj.CopyComplete
+C:\Users\Nadin\Documents\Projects\KDU_TTMS\Program\obj\Debug\Program.exe
+C:\Users\Nadin\Documents\Projects\KDU_TTMS\Program\obj\Debug\Program.pdb
